@@ -20,10 +20,10 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+/* .wrapper {
   width: 500px;
   margin: 0 auto;
-}
+} */
 /*-- Navigation --*/
 
 .youtube-nav {
@@ -293,10 +293,17 @@ h5 {
   clear: both;
 }
 
+/* size the image for mobile in CSS rather than the attr in the HTML */
+.main-image {
+  width: 100% 
+}
+
 /*--Media Query --*/
 @media only screen and (min-width : 768px) {
  .wrapper {
+   /*commented this back in and centered */
   width: 900px;
+  margin: 0 auto; 
 }
 h1 {
   font-size: 20px;
@@ -333,7 +340,7 @@ input.search-bar {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 90%; 
 }
 
 .subs {

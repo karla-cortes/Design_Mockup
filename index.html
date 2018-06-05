@@ -12,17 +12,19 @@
     <div class="wrapper">
     <header>
       <nav>
-      <ul class="youtube-nav" role="navigation">
+        <!-- role is general used if you would like a screen reader to recognize an elements as something different, i.e you need to use an <a> but you want it to be considered a <button>, <a role="button"> -->
+      <ul class="youtube-nav">
         <li class="youtube">YouTube</li>
         <li><i class="fas fa-bell"></i></li>
         <li><span class="circle">8</span></li>
         <li class="search-bar">
           <form action="#" method="post">
-          <input class="search-bar" type="text" name="" value="" placeholder="Search">
+          <input class="search-bar" type="text" name="search" value="" placeholder="Search">
           <i class="fas fa-search"></i>
         </form>
         </li>
-        <li><img src="https://i.imgur.com/gcwGC9t.png" height="20px" alt="user-icon"></li>
+        <!-- height and width inline img attributes are meant to be displayed in px, so the valid syntax is without the px-->
+        <li><img src="https://i.imgur.com/gcwGC9t.png" height="20" alt="user-icon"></li>
         <li><i class="fas fa-cog"></i></li>
         <li> <button class="upload-subscribe" type="button" name="button">Upload</button> </li>
         </ul>
@@ -31,13 +33,14 @@
     </header>
     <!--Body of Page-->
     <!-- <div class= "side-grey piece"> -->
-    <img class="main-image" src="https://i.imgur.com/z0nRPiC.png" alt="main-video" width="100%">
+      <!-- Inline image attributes only for a width/height px, the 100% width for responsiveness should be set in the CSS -->
+    <img class="main-image" src="https://i.imgur.com/z0nRPiC.png" alt="main-video">
     <div class="row">
       <div class="column">
     <div class="main-video-info">
     <h1>Mitch's Junction City Birthday Session</h1>
     <div class="clearfix">
-      <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="50px" alt="user-icon">
+      <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="50" alt="user-icon">
       <div class="account-info">
        <p class="name">MagesticVibe</p>
           <button class="upload-subscribe" type="button" name="button">Subscribe</button>
@@ -50,15 +53,17 @@
             <li><a href="#">Share</a></li>
             <li><a href="#">Add to</a></li>
             <li>
-              <a href="#"><i class="fas fa-flag">
-              </i></a>
-          </li>
-          <li>
-            <a href="#"> <i class="far fa-chart-bar">
-            </i>
-            </a>
-          </li>
-
+              <a href="#">
+                <i class="fas fa-flag"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="far fa-chart-bar"></i>
+              </a>
+            </li>
+            <!-- Missing ul close-->
+          </ul>
         </section>
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney..<span>Show More</span></p>
           <p class="published">Published on 10 Apr 2014</p>
@@ -66,13 +71,13 @@
       <div class="comments">
         <h3>Comments <span>147</span></h3>
         <div class="clearfix">
-        <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px" alt="user-icon">
+        <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35" alt="user-icon">
         <input type="text" name="comment-input-form" class="comment-input" value="" placeholder="Share your thoughts">
       </div>
 
          <div class="user-comment-section">
              <div class="clearfix">
-          <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px" alt="user-icon">
+          <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35" alt="user-icon">
            <div class="user-comment">
           <p>xxtriplex95,<span> 3 weeks ago</span></p>
            <p class="comment-text">excellent !!!!!!!</p>
@@ -81,9 +86,9 @@
         </div>
 
               <div class="clearfix">
-             <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px"  alt="user-icon">
+             <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35"  alt="user-icon">
             <div class="user-comment">
-             <p>Magda Kolera,<span> 4 months ago<span> <span class="two">2</span>
+             <p>Magda Kolera,<span> 4 months ago</span> <span class="two">2</span>
              <i class="fas fa-thumbs-up">  </i>
              <i class="fas fa-thumbs-down">
              </i></p>
@@ -92,7 +97,7 @@
             </div>
 
             <div class="clearfix">
-              <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px" alt="user-icon">
+              <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35" alt="user-icon">
               <div class="user-comment">
               <p>Marios Pappas,<span> 4 months ago</span></p>
                <p class="comment-text">It is time to honour our community picture with this incredible song.All Gods love by MAD! feat Antranita.</p>
@@ -101,7 +106,7 @@
 
                 <div class="clearfix">
                <div class="sub-comment">
-               <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="30px"  alt="user-icon">
+               <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="30"  alt="user-icon">
                <div class="user-comment">
                <p>Shira Tenne,<span> 4 months ago</span></p>
                 <p class="comment-text">the photo looks like lindsey lohan</p>
@@ -111,7 +116,7 @@
 
                 <div class="clearfix">
                <div id="subcomment">
-              <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px" alt="user-icon">
+              <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35" alt="user-icon">
               <div class="user-comment">
               <p>miss Page,<span> 5 months ago</span></p>
                <p class="comment-text">Sticks and stone may break my bones!..</p>
@@ -120,14 +125,14 @@
             </div>
 
               <div class="clearfix">
-               <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35px" alt="user-icon">
+               <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="35" alt="user-icon">
                <div class="user-comment">
                <p>Ana Sandic,<span> 5 months ago</span></p>
                 <p class="comment-text">prelepoooooooooooooo 	&lt;3</p>
                 </div>
                 </div>
                   <div class="clearfix">
-                <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="34px" alt="user-icon">
+                <img class="user-icon" src="https://i.imgur.com/gcwGC9t.png" height="34" alt="user-icon">
                 <div class="user-comment">
                 <p>Tomek Kaleniecki,<span> 5 months ago</span></p>
                  <p class="comment-text">Amazing...we also included it in our channel!</p>
@@ -154,7 +159,8 @@
 
             <!--Other Videos Section-->
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/Z87IDdf.png" height:"322" width="182" alt="video">
+              <!-- missing = in the height attr -->
+            <img class="video-thumbnail" src="https://i.imgur.com/Z87IDdf.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Glass Animals - Gooey (Wild Culture Remix)</h5>
             <p>by Three Dot House</p>
@@ -164,7 +170,7 @@
 
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/4jD75h7.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/4jD75h7.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Touch & Go - Gotta Have U (Original Mix)</h5>
             <p>by wowshift</p>
@@ -173,7 +179,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/7EKxyXT.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/7EKxyXT.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Justin T - Like I Love You (The Equalizers Remix)</h5>
             <p>by Deeper Than Ever</p>
@@ -182,7 +188,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/3jYyurW.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/3jYyurW.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Nolan feat Amber Jolene Go Slow (Finnebassen ...</h5>
             <p>by Elena Cristou</p>
@@ -191,7 +197,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/hAplRvv.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/hAplRvv.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Robin Schulz - Same (Original Mix)</h5>
             <p>by SoundYouNeed</p>
@@ -200,7 +206,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/ZGQBinb.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/ZGQBinb.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Erkka - Excommunication (Orginial Mix)</h5>
             <p>by Theolopus</p>
@@ -209,7 +215,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/Gno1Ek7.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/Gno1Ek7.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Gnarls Barkley - Crazy (TEEMID & Joie Tan Cover)</h5>
             <p>by Electro Posé</p>
@@ -218,7 +224,7 @@
             </div>
 
             <div class="clearfix">
-            <img class="video-thumbnail" src="https://i.imgur.com/C8YtJh6.png" height:"322" width="182" alt="video">
+            <img class="video-thumbnail" src="https://i.imgur.com/C8YtJh6.png" height="322" width="182" alt="video">
             <div class="video-info">
             <h5>Fabo - I Cant Decide ft Angela Sheik (Flow
             & Zeo...</h5>
